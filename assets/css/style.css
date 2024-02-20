@@ -1,0 +1,38 @@
+body * {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     margin: 0; padding: 0;
+ }
+ h2 {
+     font-size: 30px;
+     margin-bottom: 30px;
+}
+h3 {
+     font-size: 24px;
+     margin: 24px 0;
+}
+.ejercicio {
+     padding: 50px 0;
+     text-align: center;
+}
+#ejercicio-2 {
+     background-color: #f8f8f8;
+}
+#colores {
+     margin: 0 20%;
+     border: #dadada solid 10px;
+}
+button {
+     border-spacing: 0px;
+     border: #f8f8f8 0px solid;
+}
+#btn-sumar, #btn-restar, #botton {
+     padding: 12px 30px;
+     border-radius: 20px;
+     margin: 30px 10px;
+}
+input, textarea { 
+     padding: 6px; 
+     margin-bottom: 10px;
+     font-size: 14px;
+ }
