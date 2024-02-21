@@ -80,12 +80,13 @@ function cambiaColor6(){ document.querySelector("#caja").style.background='#d53f
 // EJERCICIO 3 ==============================================
 // Dar la funcionalidad de sumar y restar a la calculadora, mostrando el resultado en el elemento con clase resultado. Si el resultado de la resta entrega un número negativo debes mostrar un 0 (4 Puntos).
 
-var valor1 = parseInt( document.getElementById("valor1").value );
-var valor2 = parseInt( document.getElementById("valor2").value );
+
 
 var btnSumar = document.getElementById("btn-sumar");
 btnSumar.addEventListener('click', sumar );
 function sumar (){ 
+     var valor1 = parseInt( document.getElementById("valor1").value );
+     var valor2 = parseInt( document.getElementById("valor2").value );     
      resultado = valor1 + valor2;   
      document.getElementById("resultado").innerHTML = resultado;
 };
@@ -93,9 +94,14 @@ function sumar (){
 var btnRestar = document.getElementById("btn-restar");
 btnRestar.addEventListener('click', restar );
 function restar (){ 
+     var valor1 = parseInt( document.getElementById("valor1").value );
+     var valor2 = parseInt( document.getElementById("valor2").value );
      resultado = valor1 - valor2;   
      if (resultado < 0 ) { resultado = 0; }
      document.getElementById("resultado").innerHTML = resultado;
+     
 };
 
-
+//console.log(valor1);
+//console.log(valor2);
+//console.log(resultado);
